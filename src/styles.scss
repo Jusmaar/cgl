@@ -1,0 +1,15 @@
+/* You can add global styles to this file, and also import other style files */
+$border-bottom: 0 2px 2px 0 rgba(0,0,0,.14), 0 2px 0 -2px rgba(0,0,0,.2), 0 2px 5px 0 rgba(0,0,0,.12);
+$secondary:#178fbe;
+$primary:#3bbef1;
+$bg-gray:#f7f7f7;
+$primary-text:#333;
+$secondary-text:#777;
+@keyframes showOpacity {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity:1;
+    }
+}

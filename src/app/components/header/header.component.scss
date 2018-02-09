@@ -1,0 +1,43 @@
+// @import 
+@import "../../../styles.scss";
+nav{
+    border-bottom:4px solid $secondary;
+}
+.logo{
+    width: 300px;
+    @media screen and (max-width:500px) {
+        width: 220px;
+    }
+}
+.collapse.navbar-collapse{
+    justify-content: flex-end;
+    ul{
+        margin: 0 !important;
+    }
+}
+.fixed-top{
+    margin-top: 24px !important;
+}
+.nav-top{
+    top: 0;
+    display: flex;
+    align-items: center;
+    position:fixed;
+    background:$bg-gray;
+    width: 100%;
+    box-shadow: $border-bottom;
+    z-index: 1031;
+    height: 24px;
+    color: darkgray;
+    font-size: 12px;
+    .container-tel-idio{
+        display: flex;
+        justify-content: flex-end;
+        .tel{
+            margin-right: 10px;
+        }
+        .idioma{
+            margin-left: 10px;
+        }
+    }
+}

@@ -1,0 +1,145 @@
+@import "../../../styles.scss";
+.home-page{
+    margin-top: 92px;
+    background:$bg-gray;
+    .carousel{
+        img{
+            height: calc(100vh - 92px) !important;
+            object-fit: cover;
+            
+        }
+        .carousel-control-next{
+            cursor: pointer;
+            position: absolute;
+            bottom: 40%;
+            top: auto;
+            // right: 0;
+            // z-index: 50;
+            width: 40px;
+            height: 80px;
+            background-color: $secondary;
+        }
+        .carousel-control-prev{
+            cursor: pointer;    
+            position: absolute;
+            bottom: 40%;
+            top: auto;
+            // right: 0;
+            // z-index: 50;
+            width: 40px;
+            height: 80px;
+            background-color: $secondary;
+        }
+        .carousel-control-prev:before{
+            text-shadow: none;
+            color: #fff;
+            font: normal normal normal 14px/1 FontAwesome;
+            content: "◄";
+            font-size: 30px;
+        }
+        .carousel-control-next:before{
+            text-shadow: none;
+            color: #fff;
+            font: normal normal normal 14px/1 FontAwesome;
+            font-size: 30px;
+            content: "►";
+        }
+        .carousel-control-prev-icon{
+            display: none;
+        }
+        .carousel-control-next-icon{
+            display: none;
+        }
+    }
+    .text-descripcion{
+        color: dimgray;
+        text-align: center;
+        font-weight: bold;
+        font-size: 24px;
+        animation: showOpacity 0.8s ease;
+    }
+    h1{
+        margin-top: 10px;
+        
+        color: dimgrey;
+    }
+    h4{
+        margin-top: 10px;
+        color: dimgray;
+        margin-bottom: 20px;        
+    }
+    .card-servicio{
+        margin-bottom: 10px;
+        .content-card{
+            background: white;
+            box-shadow: $border-bottom;
+            hr{
+                background: $primary;
+            }
+            .img-serv{
+                width: 100%;
+                overflow: hidden;
+                img{
+                    transition: all 0.5s ease;
+                    width: 100%;
+                    height: 210px;
+                    object-fit: cover;
+                    &:hover{
+                        transform:scale(1.2);
+                    }
+                }
+            }
+            .fot-serv{
+                .title-serv{
+                    text-align: center;
+                    font-weight: bold;
+                    font-size: 16px;
+                    color: $primary-text;
+                }
+                .desc-serv{
+                    color: $secondary-text;
+                    padding: 0 6px;
+                    text-align: justify;
+                }
+                .enlac-serv{
+                    display: flex;
+                    justify-content: flex-end;
+                    padding-right: 6px;
+                    a{
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+        }
+    }
+    .desc-enlc-cont{
+        width: 100%;
+        background: $secondary;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .text{
+            width: 100%;
+            padding: 15px 5%;
+            text-align: center;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .btn-enlace{
+            a{
+                // width: 200px;
+                display: block;
+                padding: 10px 20px;
+                background: #0f0f79;
+                color:white;
+                text-decoration: none;
+                font-weight: bold;
+                border-radius: 7px;
+                margin-bottom: 10px;
+            }
+        }
+    }
+}
+
+
