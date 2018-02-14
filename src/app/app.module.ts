@@ -7,18 +7,25 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { ContactoComponent } from './components/contacto/contacto.component';
 
+import { AgmCoreModule } from '@agm/core'
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    ContactoComponent
+    
   ],
   imports: [
     BrowserModule,
     RouterModule,
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyBgPba9ENKjx2AD7IOG2SIFN3x5WYAKqo4'
+    }),
     // NgModule,
     APP_ROUTING
   ],

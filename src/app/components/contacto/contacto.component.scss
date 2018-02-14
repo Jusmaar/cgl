@@ -1,0 +1,55 @@
+
+@import "../../../styles.scss";
+.contacto-page{
+    margin-top: 110px;
+    background: $bg-gray;
+    margin-bottom: 30px;
+    h2{
+        color: $primary-text;
+    }
+    hr{
+        margin-top: 0 !important;
+        border:2px solid $primary;
+    }
+    agm-map {
+        height: 500px;
+    }
+    .contacto-container{
+        .oficina{
+            background: white;
+            box-shadow: $border-bottom;
+            padding: 5px 10px;
+            margin-bottom: 5px;
+            p{
+                margin: 0 !important;
+            }
+        }
+        .formulario-contacto{
+            background: white;
+            box-shadow: $border-bottom;
+            padding: 10px 8px;
+            form{
+                width: 100%;
+                label{
+                    font-weight: bold;
+                    color: $secondary-text;
+                }
+                input{
+                    width: 100%;
+                    border:1px solid rgba(128, 128, 128, 0.788);
+                    border-radius: 5px;
+                    margin-bottom: 5px;
+                }
+                textarea{
+                    width: 100%;
+                }
+                .btn-enviar{
+                    margin-top: 10px;
+                    color:white;
+                    font-weight: bold;
+                    background: #0f0f79;
+                }
+            }
+        }
+    }
+}

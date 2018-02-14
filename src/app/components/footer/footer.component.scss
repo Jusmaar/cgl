@@ -1,9 +1,72 @@
+@import "../../../styles.scss";
 footer{
     width: 100%;
-    background: black;
+    font-size: 14px;
+    color: white;
+    .container-footer-top{
+        background: rgba(0, 0, 0, 0.95);
+        width: 100%;
+        display: fleX;
+        justify-content: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        box-shadow: $border-bottom;
+        z-index: 2;
+        .ubicacion-content{
+            .place{
+                text-align: center;
+                i{
+                    font-size: 40px;
+                }
+            }
+            .redes-sociales{
+                display: flex;
+                justify-content: space-around;
+                a{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    height: 40px;
+                    width: 40px;
+                    border-radius: 100%;
+                    background: white;
+                    color: rgba(0, 0, 0, 0.95);
+                    font-size: 20px;
+                    transition: 0.3s all ease;
+                    &:hover{
+                        text-decoration: none;
+                        color: white;                        
+                    }
+                    &.go:hover{
+                        background: #c4302b;
+                    }
+                    &.fb:hover{
+                        background: #3b5998;
+                    }
+                    &.tw:hover{
+                        background: #55acee;
+                    }
+                }
+            }
+        }
+    }
     .container-footer{
+        background: black;
+        padding: 8px 0;
         width: 100%;
         color: white;
+        z-index: 1;        
         // font-weight: bold;
+        .email-contact{
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            a{
+                color: white;
+                margin-left: 5px;
+                font-size: 14px;
+            }
+        }
     }
 }
