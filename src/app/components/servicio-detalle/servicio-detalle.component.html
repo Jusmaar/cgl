@@ -1,0 +1,89 @@
+<div class="servicio-detalle-page">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2>Servicios</h2>
+      </div>
+    </div>
+    <hr>
+    <div class="servicio-container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="menu-servicios">
+            <h3>Servicios</h3>
+            <ul>
+              <li>
+                <a [routerLink]="['/servicios','TransporteAéreo']">Transporte Aéreo</a>
+              </li>
+              <li>
+                <a [routerLink]="['/servicios','TransporteTerrestre']">Transporte Terrestre</a>
+              </li>
+              <li>
+                <a [routerLink]="['/servicios','TransporteMarítimo']">Transporte Marítimo</a>
+              </li>
+              <li>
+                <a [routerLink]="['/servicios','Embalaje']">Embalaje</a>
+              </li>
+              <li>
+                <a [routerLink]="['/servicios','ServicioAduanal']">Servicio Aduanal</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-8">
+          <div class="tipo-servicio">
+            <div class="img-s">
+              <img [src]="servicio.imagenes[0]" alt="">
+            </div>
+            <div class="title-s">
+              <h3>{{servicio.nombre}}</h3>
+            </div>
+            <div class="descrip-s">
+              <p>{{servicio.decripcion}}</p>
+            </div>
+          </div>
+          <div class="form-servicio">
+            <div class="formulario-contacto">
+              <h5>Contáctanos
+                <i class="fas fa-envelope-open"></i>
+              </h5>
+              <form action="">
+                <div class="row">
+                  <div class="col-md-6">
+                    <label for="">Nombres</label>
+                    <input type="text">
+                  </div>
+                  <div class="col-md-6">
+                    <label for="">Apellidos</label>
+                    <input type="text">
+                  </div>
+                  <div class="col-md-6">
+                    <label for="">Teléfono</label>
+                    <input type="text">
+                  </div>
+                  <div class="col-md-6">
+                    <label for="">Correo</label>
+                    <input type="text">
+                  </div>
+                  <div class="col-md-12">
+                    <label for="">Mensaje</label>
+                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                  </div>
+
+                </div>
+                <div class="row">
+                  <div class="col-12">
+                    <button class="btn-enviar btn btn-block">Enviar
+                      <i class="fas fa-envelope"></i>
+
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -151,6 +151,39 @@
         display: flex;
         justify-content: center;
     }
+    .ofi-color{
+        margin: 10px;
+        width: 100%;
+        display: flex;
+        &.p{
+            justify-content: flex-end;
+        }
+        .color-o{
+            width: 18px;
+            height: 18px;
+            border-radius:3px;
+            background: yellow;
+            &.a{
+                background: red;
+            }
+        }
+        .tipo-o{
+            color: $secondary-text;
+            margin-left: 5px;
+            font-weight: bold;
+            @media screen and (max-width:767px){
+                font-size: 12px;            
+            }
+        }
+    }
+    .flags{
+        margin-top: 10px;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+    }
 }
 
 

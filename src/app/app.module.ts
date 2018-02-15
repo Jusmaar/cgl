@@ -9,15 +9,24 @@ import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { ContactoComponent } from './components/contacto/contacto.component';
 
-import { AgmCoreModule } from '@agm/core'
+import { AgmCoreModule } from '@agm/core';
+import { ServiciosComponent } from './components/servicios/servicios.component';
+import { NosotrosComponent } from './components/nosotros/nosotros.component';
+import { ServicioDetalleComponent } from './components/servicio-detalle/servicio-detalle.component'
 
+import { ServiciosService } from './services/servicios.service';
+import { EmpleoComponent } from './components/empleo/empleo.component';
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     HeaderComponent,
     FooterComponent,
-    ContactoComponent
+    ContactoComponent,
+    ServiciosComponent,
+    NosotrosComponent,
+    ServicioDetalleComponent,
+    EmpleoComponent
     
   ],
   imports: [
@@ -29,7 +38,7 @@ import { AgmCoreModule } from '@agm/core'
     // NgModule,
     APP_ROUTING
   ],
-  providers: [],
+  providers: [ServiciosService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

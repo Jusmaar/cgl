@@ -1,0 +1,86 @@
+@import "../../../styles.scss";
+.servicios-page{
+    margin-top: 110px;
+    background: $bg-gray;    
+    padding-bottom: 30px;
+    h2{
+        color: $primary-text;
+    }
+    hr{
+        margin-top: 0 !important;
+        border:2px solid $primary;
+    }
+    .card-servicio{
+        background: white;
+        box-shadow: $border-bottom;
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+        // background: url("../../../assets/imgs/Ts.jpg");
+        // padding: 10px;
+        .title-s{
+            display: flex;
+            align-items: center;
+            color: $secondary-text;
+            padding: 10px;            
+            // justify-content: ;
+            .text-title-s{
+                h3{
+                    font-size: 24px;
+                    margin-left: 10px;
+                }
+            }        
+            .icon-content-s{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 50px;
+                height: 50px;
+                font-size: 20px;
+                color: $secondary-text;
+                border-radius: 100%;
+                border:3px solid $secondary;
+                transition: 1.5s all ease;
+                // &:hover{
+                //     transform: rotateY(360deg)
+                // }
+            }
+        }
+        .enlc-s{
+            margin-top: 20px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            a{
+                display: block;
+                width: 50%;
+                background: transparent;
+                border: 1px solid;
+                border-color: $secondary;
+                color:$secondary;
+                font-weight: bold;
+                text-decoration: none;
+                border-radius: 5px;
+                text-align: center;
+                padding: 5px 0;
+                transition: 0.3s all ease;
+                box-shadow: $border-bottom;
+                &:hover{
+                    background: $secondary;
+                    color:white;
+                }
+            }
+        }
+        .img-s{
+            img{
+                width: 100%;
+                height: 180px;
+                object-fit: cover;
+            }
+        }
+        &:hover{
+            .icon-content-s{
+                transform: rotateY(360deg) scale(1.15);
+            }
+        }
+    }
+} 

@@ -1,0 +1,27 @@
+@import "../../../styles.scss";
+.nosotros-page{
+    margin-top: 110px;
+    background: $bg-gray;    
+    // margin-bottom: 30px;
+    padding-bottom: 30px;    
+    h2{
+        color: $primary-text;
+    }
+    hr{
+        margin-top: 0 !important;
+        border:2px solid $primary;
+    }
+    .container-m-v{
+        margin-top: 20px;
+        background:white;
+        box-shadow: $border-bottom;
+        padding: 20px;
+        img{
+            height: 100%;
+            object-fit: cover;
+        }
+        p{
+            color:$secondary-text;
+        }
+    }
+}    
