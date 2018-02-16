@@ -5,13 +5,13 @@
         <div class="container-tel-idio">
           <div class="tel">
             <i class="fas fa-phone-volume"></i>
-            +(511) 201-8500
+            (5934) 292-2599
           </div>
           <div>|</div>
           <div class="idioma">
             <i class="fas fa-globe"></i>
-            Idioma
-            <i class="fas fa-sort-down"></i>
+            Ecuador
+            <!-- <i class="fas fa-sort-down"></i> -->
           </div>
         </div>
       </div>
@@ -19,21 +19,21 @@
   </div>
 </div>
 
-<nav class="navbar fixed-top  navbar-expand-md navbar-light bg-white">
+<nav class="navbar fixed-top  navbar-expand-lg navbar-light bg-white">
   <div class="container">
       <a class="navbar-brand" routerLink="/home">
-          <img  class="logo" src="https://firebasestorage.googleapis.com/v0/b/plexilabs-e2f3f.appspot.com/o/cglogo.png?alt=media&token=394ba838-ee66-4004-aef2-2096c8486004" alt="logocgl.png">
+          <img  class="logo" src="https://firebasestorage.googleapis.com/v0/b/plexilabs-e2f3f.appspot.com/o/logoec.png?alt=media&token=289a9625-d836-4d1d-b984-258731b5de4a" alt="logocgl.png">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
       
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-              <a class="nav-link" routerLink="/home" routerLinkActive="active">Inicio <span class="sr-only">(current)</span></a>
+          <ul class="navbar-nav mr-auto d-block d-lg-none">
+            <li class="nav-item" data-toggle="collapse" data-target="#navbarSupportedContent">
+              <a class="nav-link"  routerLink="/home" routerLinkActive="active">Inicio <span class="sr-only">(current)</span></a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item" data-toggle="collapse" data-target="#navbarSupportedContent">
               <a class="nav-link" routerLink="/servicios" routerLinkActive="active">Servicios</a>
             </li>
             <!-- <li class="nav-item dropdown">
@@ -47,19 +47,58 @@
                 <a class="dropdown-item" href="#">Something else here</a>
               </div>
             </li> -->
-            <li class="nav-item">
-              <a class="nav-link" href="#">Herramientas</a>
+            <li class="nav-item" data-toggle="collapse" data-target="#navbarSupportedContent">
+              <a class="nav-link" routerLink="/herramientas" routerLinkActive="active">Herramientas</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item" data-toggle="collapse" data-target="#navbarSupportedContent">
+                <a class="nav-link" routerLink="/manual" routerLinkActive="active">Manual</a>
+            </li>
+            <li class="nav-item" data-toggle="collapse" data-target="#navbarSupportedContent">
                 <a class="nav-link" routerLink="/empleos" routerLinkActive="active">Empleos</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item" data-toggle="collapse" data-target="#navbarSupportedContent">
                 <a class="nav-link" routerLink="/nosotros" routerLinkActive="active">Nosotros</a>
               </li>
-            <li class="nav-item">
+            <li class="nav-item" data-toggle="collapse" data-target="#navbarSupportedContent">
               <a class="nav-link" routerLink="/contacto" routerLinkActive="active">Contacto</a>
             </li>
           </ul>
+
+
+          <ul class="navbar-nav mr-auto d-none d-lg-block menu-destk">
+              <li class="nav-item" >
+                <a class="nav-link"  routerLink="/home" routerLinkActive="active">Inicio <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" routerLink="/servicios" routerLinkActive="active">Servicios</a>
+              </li>
+              <!-- <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Dropdown
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </li> -->
+              <li class="nav-item">
+                <a class="nav-link" routerLink="/herramientas" routerLinkActive="active">Herramientas</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" routerLink="/manual" routerLinkActive="active">Manual</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" routerLink="/empleos" routerLinkActive="active">Empleos</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" routerLink="/nosotros" routerLinkActive="active">Nosotros</a>
+                </li>
+              <li class="nav-item">
+                <a class="nav-link" routerLink="/contacto" routerLinkActive="active">Contacto</a>
+              </li>
+            </ul>
           <!-- <form class="form-inline my-2 my-lg-0">
             <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
             <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>

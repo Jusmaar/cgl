@@ -1,0 +1,14 @@
+@import "../../../styles.scss";
+.manual-page{
+    margin-top: 110px;
+    background: $bg-gray;
+    // margin-bottom: 30px;
+    padding-bottom: 30px;    
+    h2{
+        color: $primary-text;
+    }
+    hr{
+        margin-top: 0 !important;
+        border:2px solid $primary;
+    }
+}

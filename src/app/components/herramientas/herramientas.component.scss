@@ -1,0 +1,44 @@
+@import "../../../styles.scss";
+.herramientas-page{
+    margin-top: 110px;
+    background: $bg-gray;
+    // margin-bottom: 30px;
+    padding-bottom: 30px;    
+    h2{
+        color: $primary-text;
+    }
+    hr{
+        margin-top: 0 !important;
+        border:2px solid $primary;
+    }
+    .herramientas-bg{
+        background: white;
+        box-shadow: $border-bottom;
+        padding: 15px;
+        .herramientas-container{
+            width: 100%;
+            ul{
+                padding: 0;
+                margin: 0;
+                li{
+                    padding: 0;
+                    margin: 0;
+                    list-style: none;
+                    width: 100%;
+                    border-bottom: 1px solid $secondary;
+                    a{
+                        display: block;
+                        // background: 
+                        width: 100%;
+                        color: dimgray;
+                        padding: 10px 5px;
+                        text-decoration: none;
+                        &:hover{
+                            background: rgba(128, 128, 128, 0.15)
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

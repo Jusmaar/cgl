@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
+import { FormsModule } from '@angular/forms';
 
 import { APP_ROUTING } from './app.routes';
 import { AppComponent } from './app.component';
@@ -16,6 +17,10 @@ import { ServicioDetalleComponent } from './components/servicio-detalle/servicio
 
 import { ServiciosService } from './services/servicios.service';
 import { EmpleoComponent } from './components/empleo/empleo.component';
+import { ManualComponent } from './components/manual/manual.component';
+
+import { PdfViewerModule } from 'ng2-pdf-viewer';
+import { HerramientasComponent } from './components/herramientas/herramientas.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,12 +31,16 @@ import { EmpleoComponent } from './components/empleo/empleo.component';
     ServiciosComponent,
     NosotrosComponent,
     ServicioDetalleComponent,
-    EmpleoComponent
+    EmpleoComponent,
+    ManualComponent,
+    HerramientasComponent
     
   ],
   imports: [
     BrowserModule,
     RouterModule,
+    PdfViewerModule,
+    FormsModule,
     AgmCoreModule.forRoot({
       apiKey: 'AIzaSyBgPba9ENKjx2AD7IOG2SIFN3x5WYAKqo4'
     }),
@@ -42,3 +51,5 @@ import { EmpleoComponent } from './components/empleo/empleo.component';
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+// platformBrowserDynamic().bootstrapModule(AppModule);
+
